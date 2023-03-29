@@ -1,7 +1,7 @@
 up:
         # docker run -d --name oracle_db -v $(PWD)/data:/opt/oracle/oradata -p 103.199.168.136:1521:1521 -p 103.199.168.136:5500:5500 -p 103.199.168.136:2484:2484 -e ORACLE_PDB=database -e ORACLE_PWD=password oracle/database:21.3.0-xe
         docker run -d --name oracle_db \
-        -p 103.199.168.136:1521:1521 -p 103.199.168.136:5500:5500 \
+        -p 1521:1521 -p 5500:5500 \
         -e ORACLE_PWD=password \
         oracle/database:21.3.0-xe
         # -v $(PWD)/data:/opt/oracle/oradata \
